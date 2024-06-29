@@ -1,0 +1,29 @@
+.h1 {
+text-align: center;
+}
+
+.student-input:valid {
+  border-color: green
+}
+
+
+/* input:focus {
+  outline: none;
+  border: 2px solid #c1d9fd
+}
+
+input:invalid {
+  border-color: red;
+} */
+
+input:not(:focus):invalid {
+  border-color:#c1d9fd;
+}
+
+.endYear {
+  position: relative;
+}
+
+.findInput {
+  border-color:#c1d9fd;
+}
