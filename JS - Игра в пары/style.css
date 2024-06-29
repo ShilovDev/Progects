@@ -1,0 +1,60 @@
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.card {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(112, 83, 4, 0.329);
+  max-width: 250px;
+  min-height: 250px;
+  padding: 40px;
+  max-width: 200px;
+  min-height: 200px;
+  border-radius: 15px;
+  margin-bottom: 32px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* .li {
+  margin: 0;
+} */
+
+.card__flipped {
+  /* transform: rotatey(180deg); */
+  background-color: rgba(31, 47, 218, 0.966);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card__flipped .h1 {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  /* transform: rotatey(180deg); */
+}
+
+.card__success {
+  background-color: #2f9b11;
+  transform: scale(0.95);
+
+  opacity: 1;
+}
+
+.card__success .h1 {
+  transform: scale(0.95);
+  color: white;
+  opacity: 1;
+}
+
+.h1 {
+  color: rgba(112, 83, 4, 0.329);
+  opacity: 0;
+}
