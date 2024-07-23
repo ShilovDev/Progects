@@ -1,0 +1,158 @@
+.h1 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.section {
+  flex-grow: 1;
+  display: flex;
+  gap: 30px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+hr {
+  width: 100%;
+}
+
+.navMenu {
+  margin-top: 38px;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  width: 100px;
+  padding: 10px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid black;
+}
+
+.navMenu a,
+.navMenu button {
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navMenu a:hover,
+.navMenu button:hover {
+  color: grey;
+}
+
+.navMenu a.active {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  flex-grow: 1;
+}
+
+.header {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+
+  color: transparent;
+  text-align: right;
+
+  border: 1px solid whitesmoke;
+}
+
+.header a {
+  color: white;
+}
+
+.header a:hover {
+  color: grey;
+}
+
+.change {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.tickerBox {
+  font-size: 32px;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-color: black;
+  border: 1px solid;
+}
+
+.ticker {
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.price {
+  color: white;
+  font-size: 16px;
+
+  margin-bottom: 0.2rem;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 0px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin: 0px;
+}
+
+.descriptionBox {
+  display: flex;
+  float: right;
+}
+.description {
+  color: white;
+  margin-top: 10px;
+  width: 40px;
+  height: 25px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.descColors {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 765px) {
+  .tickerBox {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .change {
+    text-align: center;
+    font-size: 12px;
+  }
+}
